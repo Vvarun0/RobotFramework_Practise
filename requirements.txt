@@ -1,0 +1,9 @@
+selenium
+robotframework
+robotframework-seleniumlibrary
+robotframework-pabot
+robotframework-datadriver
+robotframework-excel
+robotframework-excellib
+numpy
+pandas

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-10T01:01:21.086269" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot framework Structured Project" source="E:\PycharmProjects\Robot_framework_Structured_Project">
+<suite id="s1-s1" name="Tests" source="E:\PycharmProjects\Robot_framework_Structured_Project\Tests">
+<suite id="s1-s1-s1" name="HandleAlertPopUps" source="E:\PycharmProjects\Robot_framework_Structured_Project\Tests\HandleAlertPopUps.robot">
+<test id="s1-s1-s1-t1" name="Launch JS Application" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-10T01:01:21.312608" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<arg>${HandleAppUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-10T01:01:21.312360" elapsed="5.954291"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-10T01:01:27.267157" elapsed="0.028712"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T01:01:30.297115" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T01:01:27.296410" elapsed="3.000910"/>
+</kw>
+<kw name="Handle JS Prompt" owner="Commons">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-10T01:01:30.298870" level="INFO">Clicking element 'xpath://button[contains(text(),'Click for JS Prompt')]'.</msg>
+<arg>${AlertPrompt}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-10T01:01:30.298546" elapsed="0.055873"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T01:01:32.355141" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T01:01:30.354622" elapsed="2.000719"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>${AlertPromptMsg}</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2025-08-10T01:01:32.355637" elapsed="0.006304"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-10T01:01:34.362796" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-10T01:01:32.362118" elapsed="2.000804"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-08-10T01:01:34.374800" level="INFO">Current page contains text 'Hey Varun'.</msg>
+<arg>${AlertPromptMsg}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-08-10T01:01:34.363128" elapsed="0.011792"/>
+</kw>
+<arg>Hey Varun</arg>
+<status status="PASS" start="2025-08-10T01:01:30.298133" elapsed="4.076906"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-10T01:01:34.375404" elapsed="2.190490"/>
+</kw>
+<status status="PASS" start="2025-08-10T01:01:21.311417" elapsed="15.255091"/>
+</test>
+<status status="PASS" start="2025-08-10T01:01:21.111150" elapsed="15.456296"/>
+</suite>
+<status status="PASS" start="2025-08-10T01:01:21.110185" elapsed="15.458400"/>
+</suite>
+<status status="PASS" start="2025-08-10T01:01:21.087519" elapsed="15.481862"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot framework Structured Project" id="s1" pass="1" fail="0" skip="0">Robot framework Structured Project</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robot framework Structured Project.Tests</stat>
+<stat name="HandleAlertPopUps" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot framework Structured Project.Tests.HandleAlertPopUps</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
